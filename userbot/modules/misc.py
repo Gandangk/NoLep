@@ -91,9 +91,9 @@ async def bot_support(wannahelp):
         \nJoin the OpenUserBot Chat: @PPE_Support")
 
 
-@register(outgoing=True, pattern="^.creator$")
-async def creator(e):
-    await e.edit("[TeKnoways](https://t.me/Three_Cube_TeKnoways)")
+@register(outgoing=True, pattern="^.kanger$")
+async def kanger(e):
+    await e.edit("[GAN](https://t.me/gndngkp)")
 
 
 @register(outgoing=True, pattern="^.readme$")
