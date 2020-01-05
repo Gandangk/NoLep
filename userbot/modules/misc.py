@@ -91,9 +91,9 @@ async def bot_support(wannahelp):
         \nJoin the OpenUserBot Chat: @PPE_Support")
 
 
-@register(outgoing=True, pattern="^.kanger$")
-async def kanger(e):
-    await e.edit("[GAN](https://t.me/gndngkp)")
+@register(outgoing=True, pattern="^.creator$")
+async def creator(e):
+    await e.edit("[GAN](https://t.me/gndngkp) kanger")
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -128,7 +128,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [Here](https://github.com/Gandangk/NoLep.git) to open NoLep GitHub page."
+        "Click [Here](https://github.com/Gandangk/NoLep.git) untuk ke NoLep an yang hakiki."
     )
 
 
