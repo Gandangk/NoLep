@@ -54,7 +54,7 @@ async def mention_afk(mention):
             if mention.sender_id not in USERS:
                 if AFKREASON:
                     await mention.reply(f"Aeng AEPKA.\
-                        \nReason: `{AFKREASON}`")
+                        \nReason I'm `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
