@@ -129,7 +129,7 @@ async def amireallyalive(on):
                      f"Python: {python_version()} \n"
                      f"`------------------------------`\n"
                      f"UserNoLep: {DEFAULTUSER} \n"
-                     f"Repo:` [NoLep](https://github.com/Gandangk/Nolep.git)
+                     f"Repo:` [NoLep](https://github.com/Gandangk/Nolep)\n"
                      )    
 
 
