@@ -122,13 +122,15 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.on$")
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
-    await on.edit("`"
-                     "PENGEN YANG MANTAB-MANTAB? \n"
-                     f"------------------------------------ \n"
-                     f"Telethon version: {version.__version__} \n"
+    await on.edit(
+                     "`..BotNoLep Hirup Ni🅱️🅱️a.. \n"
+                     f"`------------------------------`\n"
+                     f"Telethon: {version.__version__} \n"
                      f"Python: {python_version()} \n"
-                     f"User: {DEFAULTUSER} \n"
-                     "`")    
+                     f"`------------------------------`\n"
+                     f"UserNoLep: {DEFAULTUSER} \n"
+                     f"Repo:` [NoLep](https://github.com/Gandangk/Nolep.git)
+                     )    
 
 
 
