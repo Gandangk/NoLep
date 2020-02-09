@@ -72,7 +72,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Shame that you don't have git, You're running 5.0 - 'Extended' anyway"
+            "Shame that you don't have git, You're running 9.0 - 'Extended' anyway"
         )
 
 
@@ -119,17 +119,17 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^.on$")
-async def amireallyalive(on):
-    """ For .on command, check if the bot is running.  """
-    await on.edit(
+@register(outgoing=True, pattern="^.alive$")
+async def amireallyalive(alive):
+    """ For .alive command, check if the bot is running.  """
+    await alive.edit(
                      "`..BotNoLep Hirup Ni🅱️🅱️a.. \n"
-                     f"`------------------------------`\n"
+                     f"`--------------------------------`\n"
                      f"Telethon: {version.__version__} \n"
                      f"Python: {python_version()} \n"
-                     f"`------------------------------`\n"
+                     f"`--------------------------------`\n"
                      f"UserNoLep: {DEFAULTUSER} \n"
-                     f"Repo:` [NoLep](https://github.com/Gandangk/Nolep)\n"
+                     f"Repo:` [Here](https://github.com/Gandangk/Nolep)\n"
                      )    
 
 
