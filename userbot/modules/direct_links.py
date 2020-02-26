@@ -153,28 +153,6 @@ def yandex_disk(url: str) -> str:
     return reply
 
 
-def mega_dl(url: str) -> str:
-    """ MEGA.nz direct links generator
-    Using https://github.com/tonikelope/megadown"""
-    reply = ''
-    try:
-        link = re.findall(r'\bhttps?://.*mega.*\.nz\S+', url)[0]
-    except IndexError:
-        reply = "`No MEGA.nz links found`\n"
-        return reply
-    command = f'bin/megadown -q -m {link}'
-    result = popen(command).read()
-    try:
-        data = json.loads(result)
-        print(data)
-    except json.JSONDecodeError:
-        reply += "`Error: Can't extract the link`\n"
-        return reply
-    dl_url = data['url']
-    name = data['file_name']
-    size = naturalsize(int(data['file_size']))
-    reply += f'[{name} ({size})]({dl_url})\n'
-    return reply
 
 
 def cm_ru(url: str) -> str:
