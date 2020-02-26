@@ -53,9 +53,7 @@ RUN apk add --no-cache=true --update \
     chromium \
     chromium-chromedriver \
     zlib-dev \
-    jpeg 
-    
-
+    jpeg
 
 
 RUN python3 -m ensurepip \
@@ -68,7 +66,7 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b sql-extended https://github.com/Gandangk/NoLep.git /root/userbot
+RUN git clone -b sql-extended https://github.com/mkaraniya/OpenUserBot /root/userbot
 RUN mkdir /root/userbot/bin/
 WORKDIR /root/userbot/
 
