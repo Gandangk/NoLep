@@ -41,8 +41,6 @@ async def direct_link_generator(request):
             reply += gdrive(link)
         elif 'zippyshare.com' in link:
             reply += zippy_share(link)
-        elif 'mega.' in link:
-            reply += mega_dl(link)
         elif 'yadi.sk' in link:
             reply += yandex_disk(link)
         elif 'cloud.mail.ru' in link:
