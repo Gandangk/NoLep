@@ -153,8 +153,6 @@ def yandex_disk(url: str) -> str:
     return reply
 
 
-
-
 def cm_ru(url: str) -> str:
     """ cloud.mail.ru direct links generator
     Using https://github.com/JrMasterModelBuilder/cmrudl.py"""
@@ -328,6 +326,6 @@ CMD_HELP.update({
     "Usage: Reply to a link or paste a URL to\n"
     "generate a direct download link\n\n"
     "List of supported URLs:\n"
-    "`Google Drive - MEGA.nz - Cloud Mail - Yandex.Disk - AFH - "
+    "`Google Drive - Cloud Mail - Yandex.Disk - AFH - "
     "ZippyShare - MediaFire - SourceForge - OSDN - GitHub`"
 })
