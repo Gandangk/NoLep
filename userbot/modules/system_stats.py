@@ -164,7 +164,6 @@ CMD_HELP.update(
     {"pip": ".pip <module(s)>\
     \nUsage: Does a search of pip modules(s)."})
 CMD_HELP.update({
-    "on":
     "alive":
     ".alive\
     \nUsage: Type .alive to see wether your bot is working or not.\
